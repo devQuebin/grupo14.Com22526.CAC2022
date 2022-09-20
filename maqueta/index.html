@@ -6,36 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/undraw_Beach_day_cser.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- hamburger menu icon: -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
     <title>PET HOUSE</title>
 </head>
 <body>
 
-    <header>
-        <img src="img/logo temporal.png" alt="logo">
-        <input type="text" placeholder="Search..">
-        <boton>SIGN UP</boton>
-        <boton>LOGIN</boton>
+    <header class="header-container">
+        <a href="index.html" ><img src="img/logo temporal.png" alt="Logo Pet House" id="header-logo"></a>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="header-buttons"> 
+          <a href="#"><button class="button btn-login">LOGIN</button></a>
+          <a href="#"><button class="button btn-signup">SIGN UP!</button></a>
+        </div>
     </header>
 
-    <nav>
-        <div class="navbar">
-            <a href="#aboutus">ABOUT US</a>
-            
-            <div class="dropdown">
-              <button class="dropbtn">ADOPT ME! 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#puppies">PUPPIES</a>
-                <a href="#kitties">KITTIES</a>
-              </div>
-            </div> 
-            <a href="#donations">DONATIONS</a>
-            <a href="#faqs">FAQS</a>
-          </div>
+<!--
+    <nav class="navbar">
+      <a href="#aboutus">ABOUT US</a>     
+      <div class="dropdown">
+        <button class="dropbtn">ADOPT ME! 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#puppies">PUPPIES</a>
+          <a href="#kitties">KITTIES</a>
+        </div>       
+      </div> 
+      <a href="#donations">DONATIONS</a>
+      <a href="#faqs">FAQS</a>
+    </nav>
+-->
+
+    <nav class="navbar">
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i class="ri-menu-line"></i></label>
+      <div class="navbar-menu">
+        <a href="#aboutus" class="navbar-item">ABOUT US</a>     
+        <div class="dropdown">
+          <button class="dropbtn navbar-item">ADOPT ME! 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#puppies">PUPPIES</a>
+            <a href="#kitties">KITTIES</a>
+          </div>   
+        </div> 
+        <a href="#donations" class="navbar-item">DONATIONS</a>
+        <a href="#faqs" class="navbar-item">FAQS</a>
+        <div class="navbar-buttons"> 
+          <a href="#">LOGIN</a>
+          <a href="#">SIGN UP!</a>
+        </div>
+      </div>
     </nav>
 
+    <main>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia est labore nisi animi provident veritatis numquam dignissimos quos natus perferendis vitae eos necessitatibus iure esse reprehenderit neque doloremque sapiente tenetur amet non, et excepturi officia. Assumenda, quas? Ipsum modi excepturi corrupti totam aspernatur commodi, reiciendis architecto facilis ipsa enim asperiores dolorum iste. Ratione dolorem eos pariatur quod obcaecati quaerat ipsa possimus quibusdam, voluptatum fugit quo recusandae, sapiente dignissimos sunt facilis? Hic beatae, dicta numquam esse optio accusamus dolore quaerat minima quidem eligendi repellendus, vel, odio qui sunt. Consequatur sapiente fuga possimus voluptate quae officiis ea amet beatae! Quia repudiandae voluptatem ullam illo vero ipsum asperiores, tempora pariatur. Ut molestias eum aliquam ipsa commodi ad deserunt corporis, neque excepturi voluptates quos eos, dolore, ex fugit odio possimus saepe earum. Voluptates doloribus, iusto quae iste nisi tempora at ut quis labore delectus, eveniet repellat voluptatem perspiciatis exercitationem excepturi numquam assumenda esse corrupti nostrum nihil ipsum hic. Quisquam laudantium veritatis atque, cumque ad id eum vero, ea repellat saepe mollitia sequi harum vel culpa enim aliquam sunt expedita corporis iusto. Quae temporibus vel quia, explicabo repellendus laborum doloribus rerum mollitia adipisci doloremque ad illo placeat dolore id, pariatur provident! Consectetur exercitationem dolores facilis eos provident deleniti optio aperiam vitae placeat sequi quibusdam autem vel alias atque fugit sed unde, accusantium, voluptas quae dolore. Ea quidem exercitationem dicta, necessitatibus vero facilis nisi aspernatur, illum itaque soluta esse odit deserunt rem sequi ex repellat unde non maxime. Laborum pariatur, ad repudiandae, magni non rerum dolorem, inventore praesentium autem similique aspernatur amet. Dolorum incidunt tempore odit eveniet vero. Assumenda dolorem cumque, maiores praesentium eos perspiciatis doloribus magni dignissimos nisi minima quidem soluta cupiditate possimus sint, rerum recusandae vero ipsum mollitia fugiat doloremque vel! Nemo perspiciatis blanditiis in possimus voluptas soluta quod quasi animi quas, quae accusamus!
+    </main>
+
     <footer>
+      <!--
         <DIV>REDES SOCIALES ICONOS</DIV>
         <div>
             <h3>Equipo Rosario</h3>
@@ -48,7 +88,8 @@
         
         <div><p>tel. (+54) 9 1212121212</p>></div>
         <div>contact@pethouse.com</div>
-        <div>SPONSORS</div>        
+        <div>SPONSORS</div> 
+      -->       
     </footer>
     <!-- probando git bash, nico -->
 </body>
