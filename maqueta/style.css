@@ -267,3 +267,10 @@ body {
   } 
 } 
 
+/*====================footer========================*/
+
+footer{
+  background-color: rgb(255, 190, 140);
+  border-style: none;;
+}
+
