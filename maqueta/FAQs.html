@@ -4,9 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon/undraw_Beach_day_cser.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- hamburger menu icon: -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <title>PET HOUSE</title>
 </head>
 <body>
-    
+
+    <header class="header-container">
+      <img src="/img/logo temporal.png" usemap="#logomap" id="logo">
+      <map name="logomap">
+        <area shape="circle" coords="66,66,66" href="/index.html"/>
+      </map>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." id="input-search">
+            <button type="submit" id="button-search"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="header-buttons"> 
+          <a href="#"><button class="button btn-transition">
+            <span>LOGIN</span>
+            <svg>
+              <rect x="0" y="0" fill="none"></rect>
+            </svg>
+          </button></a>
+          <a href="#"><button class="button btn-transition">
+            <span>SIGN UP!</span>         
+            <svg>
+              <rect x="0" y="0" fill="none"></rect>
+            </svg>
+          </button></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i class="ri-menu-line"></i></label>
+      <div class="navbar-menu">
+        <a href="#aboutus" class="navbar-item">ABOUT US</a>     
+        <div class="dropdown">
+          <button class="dropbtn navbar-item">ADOPT ME! 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#puppies">PUPPIES</a>
+            <a href="#kitties">KITTIES</a>
+          </div>   
+        </div> 
+        <a href="#donations" class="navbar-item">DONATIONS</a>
+        <a href="#faqs" class="navbar-item">FAQS</a>
+        <div class="navbar-buttons"> 
+          <a href="#">LOGIN</a>         
+          <a href="#">SIGN UP!</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <section>            
+            <div class="faqcontainer">
+                <h1>HOW CAN WE HELP YOU?</h1>
+                <div class="accordion">
+
+                    <div class="accordion-item" id="q1">
+                        <a class="accordion-link" href="#q1">
+                            I've found a pet I want to adopt - what's next? 
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                                Accusamus libero deserunt hic ducimus quisquam 
+                                dignissimos obcaecati, natus velit provident ipsam et
+                                iusto aliquam necessitatibus blanditiis nisi consequuntur? 
+                                Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="q2">
+                        <a class="accordion-link" href="#q2">
+                            Why aren't rescue pets free? 
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus libero deserunt hic ducimus quisquam dignissimos obcaecati, natus velit provident ipsam et iusto aliquam necessitatibus blanditiis nisi consequuntur? Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item" id="q3">
+                        <a class="accordion-link" href="#q3">
+                            Help! I've found a stray cat. What do I do?
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus libero deserunt hic ducimus quisquam dignissimos obcaecati, natus velit provident ipsam et iusto aliquam necessitatibus blanditiis nisi consequuntur? Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="q4">
+                        <a class="accordion-link" href="#q4">
+                            Can I volunteer with PetHouse?
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus libero deserunt hic ducimus quisquam dignissimos obcaecati, natus velit provident ipsam et iusto aliquam necessitatibus blanditiis nisi consequuntur? Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="q5">
+                        <a class="accordion-link" href="#q5">
+                            Why can't I search by breed?
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus libero deserunt hic ducimus quisquam dignissimos obcaecati, natus velit provident ipsam et iusto aliquam necessitatibus blanditiis nisi consequuntur? Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="q6">
+                        <a class="accordion-link" href="#q6">
+                            I've lost my pet, can you help?
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus libero deserunt hic ducimus quisquam dignissimos obcaecati, natus velit provident ipsam et iusto aliquam necessitatibus blanditiis nisi consequuntur? Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="q7">
+                        <a class="accordion-link" href="#q7">
+                            What are donations to PetRescue used for?
+                            <ion-icon class="add" name="add-outline"></ion-icon>
+                            <ion-icon class="remove" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus libero deserunt hic ducimus quisquam dignissimos obcaecati, natus velit provident ipsam et iusto aliquam necessitatibus blanditiis nisi consequuntur? Fugiat, deleniti ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+</section>
+      
+    </main>
+
+    <footer>
+      <div class="footerimg"><img src="img/logo temporal.png"/></div>
+
+      
+
+      <div class="contact">CONTACT</div>
+       
+      <div>
+          <h3>Equipo Buenos Aires</h3>
+          <div><p>tel. (+54) 9 1212121212</p>></div>
+        <div>contact@pethouse.com</div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.907709981955!2d-58.43782248511291!3d-34.60649516515139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses-419!2sar!4v1663418554258!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+        
+        
+        <DIV class="followus">FOLLOW US</DIV>
+        <div class="iconos">
+          <a href="https://www.youtube.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg></a>
+          <a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg></a>
+          <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg></a>
+          <a href="https://facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg></a>
+          
+          
+          
+          
+        </div>        
+         
+    </footer>
+    <!-- probando git bash, nico -->
+    <!--ION ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
