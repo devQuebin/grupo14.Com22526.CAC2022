@@ -20,7 +20,12 @@
 <body>
 
     <header class="header-container">
-        <a href="index.html" ><img src="img/logo temporal.png" alt="Logo Pet House" id="header-logo"></a>
+        <div>
+          <img src="img/logo temporal.png" usemap="#logomap" id="header-logo" alt="Logo Pet House">
+          <map name="logomap">
+            <area shape="circle" coords="66,66,66" href="../maqueta/index.html"/>
+          </map>
+        </div>
         <div class="search-container">
           <form action="#">
             <input type="text" placeholder="Search.." id="input-search">
