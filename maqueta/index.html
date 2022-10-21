@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/undraw_Beach_day_cser.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- hamburger menu icon: -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="slider.css">
 
-    <title>PET HOUSE</title>
+    <script defer src="js/slider.js"></script>
+
+    <title>Home | PET HOUSE</title>
 </head>
 <body>
 
@@ -44,18 +47,18 @@
       <input type="checkbox" id="toggler">
       <label for="toggler"><i class="ri-menu-line"></i></label>
       <div class="navbar-menu">
-        <a href="#aboutus" class="navbar-item">ABOUT US</a>     
+        <a href="/aboutus" class="navbar-item">ABOUT US</a>     
         <div class="dropdown">
           <button class="dropbtn navbar-item">ADOPT ME! 
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#puppies">PUPPIES</a>
-            <a href="#kitties">KITTIES</a>
+            <a href="/puppies">PUPPIES</a>
+            <a href="/kitties">KITTIES</a>
           </div>   
         </div> 
-        <a href="#donations" class="navbar-item">DONATIONS</a>
-        <a href="#faqs" class="navbar-item">FAQS</a>
+        <a href="/donations" class="navbar-item">DONATIONS</a>
+        <a href="/FAQs" class="navbar-item">FAQS</a>
         <div class="navbar-buttons"> 
           <a href="#">LOGIN</a>         
           <a href="#">SIGN UP!</a>
@@ -63,8 +66,48 @@
       </div>
     </nav>
 
-    <main>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia est labore nisi animi provident veritatis numquam dignissimos quos natus perferendis vitae eos necessitatibus iure esse reprehenderit neque doloremque sapiente tenetur amet non, et excepturi officia. Assumenda, quas? Ipsum modi excepturi corrupti totam aspernatur commodi, reiciendis architecto facilis ipsa enim asperiores dolorum iste. Ratione dolorem eos pariatur quod obcaecati quaerat ipsa possimus quibusdam, voluptatum fugit quo recusandae, sapiente dignissimos sunt facilis? Hic beatae, dicta numquam esse optio accusamus dolore quaerat minima quidem eligendi repellendus, vel, odio qui sunt. Consequatur sapiente fuga possimus voluptate quae officiis ea amet beatae! Quia repudiandae voluptatem ullam illo vero ipsum asperiores, tempora pariatur. Ut molestias eum aliquam ipsa commodi ad deserunt corporis, neque excepturi voluptates quos eos, dolore, ex fugit odio possimus saepe earum. Voluptates doloribus, iusto quae iste nisi tempora at ut quis labore delectus, eveniet repellat voluptatem perspiciatis exercitationem excepturi numquam assumenda esse corrupti nostrum nihil ipsum hic. Quisquam laudantium veritatis atque, cumque ad id eum vero, ea repellat saepe mollitia sequi harum vel culpa enim aliquam sunt expedita corporis iusto. Quae temporibus vel quia, explicabo repellendus laborum doloribus rerum mollitia adipisci doloremque ad illo placeat dolore id, pariatur provident! Consectetur exercitationem dolores facilis eos provident deleniti optio aperiam vitae placeat sequi quibusdam autem vel alias atque fugit sed unde, accusantium, voluptas quae dolore. Ea quidem exercitationem dicta, necessitatibus vero facilis nisi aspernatur, illum itaque soluta esse odit deserunt rem sequi ex repellat unde non maxime. Laborum pariatur, ad repudiandae, magni non rerum dolorem, inventore praesentium autem similique aspernatur amet. Dolorum incidunt tempore odit eveniet vero. Assumenda dolorem cumque, maiores praesentium eos perspiciatis doloribus magni dignissimos nisi minima quidem soluta cupiditate possimus sint, rerum recusandae vero ipsum mollitia fugiat doloremque vel! Nemo perspiciatis blanditiis in possimus voluptas soluta quod quasi animi quas, quae accusamus!
+    <main class="home">
+
+      <section class="home__slider">
+        <div class="carrousel">
+          <div class="grande">
+              <img src="img/slider/perro1.jpg" alt="Imagen 1" class="img">
+              <img src="img/slider/perro2.jpg" alt="Imagen 2" class="img">
+              <img src="img/slider/perro3.jpg" alt="Imagen 3" class="img">
+              <img src="img/slider/perro4.jpg" alt="Imagen 4" class="img">
+          </div>
+  
+          <ul class="puntos">
+              <li class="punto activo"></li>
+              <li class="punto"></li>
+              <li class="punto"></li>
+              <li class="punto"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="home__tagline">
+        <div>
+          <h1>PetRescue</h1>
+          <h2>Helping find a home for every pet (that needs one) since 2004.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, sunt cupiditate quaerat aliquid labore sequi asperiores beatae dicta consequuntur explicabo culpa quidem repudiandae, magni et ab dolore minus saepe tempore.</p>
+          <button type="submit" class="home__tagline__button">Find out more!</button> 
+        </div>
+      </section>
+
+      <section class="home__info">
+        <div>
+          <img src="img/perro_circulo.png">
+        </div>
+        <div>
+          <p>MORE INFORMATION</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsa qui nesciunt, quisquam delectus omnis dolores eius! Magnam maxime officia, laudantium labore eum ad. Doloremque ad doloribus quasi temporibus ea.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore asperiores sequi officia dignissimos temporibus? Laborum voluptatibus rerum sunt, ducimus suscipit cum iure, rem laudantium, nesciunt nihil itaque hic ipsam tenetur!
+          </p>
+        </div>
+
+      </section>
+
     </main>
 
     <footer>
@@ -84,6 +127,5 @@
         <div>SPONSORS</div> 
       -->       
     </footer>
-    
 </body>
 </html>
