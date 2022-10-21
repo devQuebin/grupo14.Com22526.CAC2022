@@ -9,6 +9,7 @@ body {
   justify-content:center;
   align-items: center;
   background: rgb(255, 190, 140);
+  padding: 0;
 }
 
 .navbar-menu{
@@ -27,11 +28,16 @@ body {
    display: block;
 }
 
+.navbar-item:hover{
+  color:#000
+}
+
 .dropdown{
   text-decoration: none;
 }
 
 .dropbtn{
+  
   border: none;
   outline: none;
   background-color: inherit;
@@ -67,6 +73,7 @@ body {
   display: inline-block;
   padding: 15px;
 }
+
 
 #toggler,
 .navbar label,
@@ -220,6 +227,7 @@ body {
 	stroke-dashoffset: 0;
 }
 
+
 /* .btn-login{
   border:#fff solid 2px;
   background-color: #fff;
@@ -266,6 +274,187 @@ body {
     background: #fff;
   } 
 } 
+
+
+
+
+
+/*==================== login ============================*/
+/* 
+.form-login{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.form-login__section label,
+.form-login__section input{
+  display: block;
+}
+
+.form-login__section label{
+  position: relative;
+  top: 8px;
+  left: 8px;
+  background-color: #fff;
+  width: min-content;
+}
+
+.form-login__section input{
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.form-login__button {
+  margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+  min-width: 50px;
+	height: 40px;
+	background: #141414;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.form-login__button span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+}
+
+.form-login__button .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.form-login__button svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.form-login__button:hover {
+	background: rgb(240, 160, 41);
+}
+
+.form-login__button:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.form-login__button:hover span {
+	left: 20px;
+} */
+
+
+/*=====================home========================*/
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.home__slider{
+  margin-top: 30px;
+}
+
+.home__tagline{
+  background-color: rgb(255, 190, 140);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.home__tagline div{
+  max-width: 800px;
+  text-align: center;
+  padding: 30px;
+  
+}
+
+.home__tagline h1{
+  color: rgb(12, 141, 12);
+  font-weight: 700;
+}
+
+.home__tagline h2{
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.home__tagline__button{
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: rgb(12, 141, 12);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.home__tagline__button a{
+  text-decoration: none;
+}
+
+.home__tagline__button:hover{
+  background: rgb(67, 177, 67)
+}
+
+
+.home__info{
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  justify-content: center;
+}
+
+
+.home__info div:first-child{
+  flex-basis: 200px;
+  padding: 10px;
+  flex-grow: 0;
+}
+
+.home__info div:nth-child(2) p:first-child{
+  font-size: 1.2em;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.home__info div:nth-child(2){
+  padding: 10px;
+  text-align: justify;
+  flex-basis: 300px;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+
 
 /*====================footer========================*/
 
