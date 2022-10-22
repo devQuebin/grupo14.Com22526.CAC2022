@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
-  font-family:'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.font-title{
+  font-weight: 600;
 }
 
 /*======================= navbar ====================*/
@@ -523,6 +530,7 @@ body {
       padding: 35px 0px;
   }
 }
+
 
 /* about us */
 
