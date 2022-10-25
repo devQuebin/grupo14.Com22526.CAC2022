@@ -65,10 +65,10 @@ const validarPassword2=()=>{
 const validarFormulario = (e)=> {
     switch (e.target.name) {
         case "first_name":
-            validarCampo(exReg.name, e.target, 'first-name');
+            validarCampo(exReg.name, e.target, 'first_name');
         break;
         case "last_name":
-            validarCampo(exReg.name, e.target, 'last-name');
+            validarCampo(exReg.name, e.target, 'last_name');
         break;
         case "email":
             validarCampo(exReg.email, e.target, 'email');
@@ -93,28 +93,52 @@ inputs.forEach((input)=>{
 });
 
 
-form.addEventListener('submit', (e)=>{
-    console.log('boton send');
+function eventoSubmit(e){
     e.preventDefault();
 
     const terms= document.getElementById('terms');
     if (campos.username && campos.first_name && campos.last_name && campos.email && campos.password && terms.checked){
         form.reset();
-        console.log("func");
-
+        Object.entries(campos).forEach(([key, val]) => {
+            campos[key] = false;
+        });
+        document.getElementById('form__section-warning').classList.remove('form__section-warning-activo');
         document.getElementById('txt-exito').classList.add('txt-exito-activo');
         setTimeout(()=>{document.getElementById('txt-exito').classList.remove('txt-exito-activo')} , 5000);
+        setTimeout( function() { window.location.href = "index.html"; }, 3000 );
 
         document.querySelectorAll('.form__section-correct').forEach((icono)=>{
-            icono.classList.remove('from__section-correct');
-        })
+            icono.classList.remove('from__section-correct');  //no funciona
+            console.log("sacando iconos tilde")
+        });
     } else {
-        console.log('mal')
-        document.getElementById('form-warning').classList.add('form__section-warning-activo');
+        document.getElementById('form__section-warning').classList.add('form__section-warning-activo');
     }
+};
+
+form.addEventListener('submit',eventoSubmit);
 
 
-    
-});
+// form.addEventListener('submit', (e)=>{
+//     console.log('boton send');
+//     e.preventDefault();
+
+//     const terms= document.getElementById('terms');
+//     if (campos.username && campos.first_name && campos.last_name && campos.email && campos.password && terms.checked){
+//         form.reset();
+//         console.log("func");
+        
+//         document.getElementById('form__section-warning').classList.remove('form__section-warning-activo');
+//         document.getElementById('txt-exito').classList.add('txt-exito-activo');
+//         setTimeout(()=>{document.getElementById('txt-exito').classList.remove('txt-exito-activo')} , 5000);
+
+//         document.querySelectorAll('.form__section-correct').forEach((icono)=>{
+//             icono.classList.remove('from__section-correct');
+//         })
+//     } else {
+//         console.log('mal')
+//         document.getElementById('form-warning').classList.add('form__section-warning-activo');
+//     }
+// });
 
 

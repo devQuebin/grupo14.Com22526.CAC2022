@@ -45,7 +45,7 @@ document.getElementById("navbar").innerHTML=`
     <a href="contactus.html" class="navbar-item font-title">CONTACT US</a>
     <div class="navbar-buttons"> 
     <a href="login.html" class="font-title">LOGIN</a>         
-    <a href="#" class="font-title">SIGN UP!</a>
+    <a href="signup.html" class="font-title">SIGN UP!</a>
     </div>
     </div>`
 
