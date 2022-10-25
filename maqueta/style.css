@@ -25,11 +25,11 @@ body {
   justify-content:center;
   align-items: center;
   background: rgb(255, 190, 140);
-  gap: 5%;
+  gap: 3.5%;
 } 
 
 .navbar-item{
-   padding: 15px;
+   padding: 15px 10px;
    text-decoration: none;
    color: rgb(0, 0, 0);
    display: block;
@@ -87,6 +87,7 @@ body {
 .navbar-buttons{
     display: none;
 }
+
 
 @media screen and 
 (max-width: 600px){
