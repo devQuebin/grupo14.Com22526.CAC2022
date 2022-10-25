@@ -18,7 +18,7 @@ document.getElementById("header-container").innerHTML = `
             <rect x="0" y="0" fill="none"></rect>
         </svg>
         </button></a>
-        <a href="#sign_up"><button class="button btn-transition">
+        <a href="signup.html"><button class="button btn-transition">
         <span class="font-title">SIGN UP!</span>         
         <svg>
             <rect x="0" y="0" fill="none"></rect>
