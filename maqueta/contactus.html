@@ -36,24 +36,43 @@
             </b>
             </div>
         <form class="form" id="form-contact" name="form-contact">
-            <div class="form__section">
+            <div class="form__section" id="section__first-name">
                 <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="first_name" placeholder="Enter first name" required maxlength="20">
+                <div class="form__section-input">
+                    <input type="text" name="first_name" id="first_name" placeholder="Enter first name" required maxlength="16">
+                    <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__section-error">The name can contain from 3 to 16 digits and be only letters</p>
             </div>
-            <div class="form__section">
+            <div class="form__section" id="section__last-name">
                 <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name" placeholder="Enter last name" required maxlength="20">
+                <div class="form__section-input">
+                    <input type="text" name="last_name" id="last_name" placeholder="Enter last name" required maxlength="16">
+                    <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__section-error">The name can contain from 3 to 16 digits and be only letters</p>
             </div>
-            <div class="form__section">
+            <div class="form__section" id="section__email">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter email" required>
+                <div class="form__section-input">
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
+                    <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__section-error">The email can only contain letters, numbers, dots, hyphens and underscores.</p>
             </div>
-            <div class="form__section">
+            <div class="form__section" id="section__message">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Enter message" required spellcheck="true"></textarea>
+                <div class="form__section-input form__section-textarea">
+                    <textarea name="message" id="message" placeholder="Enter message" required spellcheck="true" maxlength="600"></textarea>
+                    <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form__section-error">The message cant't be empty</p>
             </div>
-            <div class="form__section">
-                <button type="submit" class="form__button">
+            <div class="form__section form__section-warning" id="form-warning">
+                <p ><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Please fill in the form correctly.</p>
+            </div>
+            <div class="form__section form__section-btn-send">
+                <button type="submit" class="form__button" id="btn-send">
                     <div class="icono">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
@@ -61,6 +80,7 @@
                     </div>
                     <span>Send</span>
                 </button>
+                <p class="txt-exito" id="txt-exito">The form was sent successfully!</p>
             </div>
         </form>
     </main>
@@ -69,6 +89,7 @@
 
     
     <script src="js/base.js"></script>
-    
+    <script src="js/contactus.js"></script>
+    <script src="https://kit.fontawesome.com/cfd486c001.js" crossorigin="anonymous"></script>    
 </body>
 </html>
